@@ -14,10 +14,11 @@
     </head>
     <body>
         <h1>Shopping List</h1>
-        <form method="get" action="shoppingList">
+        <form method="post" action="shoppingList">
             Username: <input type="text" name="username" autofocus>
-            <input type="submit" value="Register name"><br>
-            ${message}
+            <input type="hidden" name="action" value="register">
+            <br>
+            <input type="submit" value="Register"><br>
         </form>
     </body>
 </html>
